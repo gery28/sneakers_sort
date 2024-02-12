@@ -22,7 +22,7 @@ def main():
             sneakers_list.append(current_shoe)
     for i in range(len(keywords)):
         print(f"{i + 1} - {keywords[i]}")
-    sort_by = keywords[int(input("Sort by: ")) - 1]
+    sort_by = keywords[int(input("Sort by(number): ")) - 1]
     print(sort_by)
     pprint(sort_sneakers(sneakers_list, sort_by), sort_dicts=False)
 
